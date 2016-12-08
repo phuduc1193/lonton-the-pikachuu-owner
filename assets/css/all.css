@@ -34,6 +34,11 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+.center {
+  text-align: center !important;
+  padding: 2em;
+}
+
 #mainContent {
   display: none;
   position:absolute;
@@ -43,7 +48,6 @@ body {
   right:0;
   height:100%;
   width:100%;
-  text-align: center;
   background-image: url(../images/bg-wallpaper.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,7 +64,20 @@ body {
 #btnStartContainer {
   display: none;
   margin: 5em;
-  text-align: center;
+}
+#btnStartContainer button {
+  padding: 1em 2em;
+  border-color: #B80008;
+  border-radius: 0.5em;
+  background-color: #C2000B;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 0.2em 0.2em 0.5em #888888;
+}
+#btnStartContainer button:hover {
+  background-color: #9F0E15;
+  cursor: pointer;
 }
 
 #snowflakeContainer {
@@ -80,4 +97,12 @@ body {
 }
 .snowflake:hover {
     cursor: default;
+}
+
+#slider {
+  display: none;
+}
+
+#anotherSlider {
+  display: none;
 }
