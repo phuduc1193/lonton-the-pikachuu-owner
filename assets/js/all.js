@@ -8,9 +8,12 @@ $(document).ready(function() {
 
 function startProgram() {
 	$("#btnStartContainer").hide();
-	$("#mainContent").fadeIn();
-	$(".opening").hide().delay(500).fadeIn(800);
-	$(".opening p").hide().delay(1800).fadeIn(800);
+	setTimeout(function() {
+	    $("#mainContent").fadeIn();
+		$(".opening").hide().delay(500).fadeIn(800);
+		$(".opening p").hide().delay(1800).fadeIn(800);
+	}, 50);
+	
 	setTimeout(function() {
 		$(".opening").append("<p>Nhưng mà tính đúng ra thì biết nhau gần 1 năm rồi nhỉ?</p>").children(':last').hide().fadeIn(800);
 		setTimeout(function() {
@@ -19,9 +22,9 @@ function startProgram() {
 			    $(".opening").append("<p>Lonton với anh trải qua bao nhiêu buồn vui. Đòi chia tay quá trời.</p>").children(':last').hide().fadeIn(800);
 			    setTimeout(function() {
 				    $(".opening").append("<br><h3>Mà có chia tay đâu..?</h3>").children(':last').hide().fadeIn(800);
-				},4000);
-			},3000);
-		},3000);
+				}, 4000);
+			}, 3000);
+		}, 3000);
 	}, 4500);
 	
 	setTimeout(function() {
