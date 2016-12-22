@@ -7,11 +7,13 @@ $(document).ready(function() {
 });
 
 function startProgram() {
-	$("#btnStartContainer").hide();
+	$("#btnStartContainer").fadeOut();
 	setTimeout(function() {
 	    $("#mainContent").fadeIn();
 		$(".opening").hide().delay(500).fadeIn(800);
 		$(".opening p").hide().delay(1800).fadeIn(800);
+			// Play background music
+		$("#bg-sound").get(0).play();
 	}, 50);
 	
 	setTimeout(function() {
@@ -38,8 +40,6 @@ function startProgram() {
 		}, 800);
 	}, 16500);
 	
-	// Play background music
-	$("#bg-sound").get(0).play();
 	setTimeout(displaySlider, 22500);
 }
 
