@@ -334,6 +334,12 @@ $("#circle15").click(function() {
   path.getBoundingClientRect();
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1s ease-in-out';
   path.style.strokeDashoffset = length;
+  
+  setTimeout(function(){
+    $("#anotherSlider").fadeOut(2000);
+    $("#last").fadeIn(1000);
+  }, 14000);
+  
   setTimeout(function(){
     $("#circle14").attr('fill','none');
     var path = document.querySelector("#line13");

@@ -55,7 +55,7 @@ function displayAnotherSlider() {
 	$("svg").fadeIn(2000);
 	$("#slider").fadeOut(3000);
 	$("#anotherSlider").fadeIn(3000);
-	$("#mainContent").css("background-image", "url(assets/images/11.jpg)");
+	$("#mainContent").css("background-image", "url(assets/images/11.jpg)").css('background-size','contain');
 	$("#mainContent").fadeIn(4000);
 	$("#snowflakeContainer").fadeIn(3000);
 }
