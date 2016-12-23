@@ -1,5 +1,5 @@
 /* Disable scrolling */
-html { overflow-y: hidden; }
+html { overflow: hidden; }
 
 body {
   background: #FFF;
@@ -36,7 +36,6 @@ body {
 
 .center {
   text-align: center !important;
-  padding: 2em;
 }
 
 #mainContent {
@@ -105,13 +104,37 @@ body {
 
 #anotherSlider {
   display: none;
-  position:absolute;
+  position: absolute;
   top:0;
   left:0;
   bottom:0;
   right:0;
   height:100%;
   width:100%;
+  background-image: url(../images/10.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: background 2s ease-in;
+  transition: background 2s ease-in;
+}
+
+#svgTextContainer {
+  display: block;
+  position: absolute;
+  padding: 2em;
+  top: 2em;
+  right: 2em;
+  font-size: 1.2em;
+  color: #180403;
+  background-color: #FF726E70;
+  border-radius: 0.3em;
+  border: 0.2em solid #FD666233;
+  width: 15em;
+  height: auto;
+}
+
+[id^="circle"] {
+  cursor: pointer;
 }
 
 /* Make unavailable for Mobile ----------- */

@@ -36,9 +36,83 @@
 	</div>
 
 	<div id="anotherSlider" class="center">
-		<h1>Anh vẫn thương em</h1>
+		<br /><br />
+		<h1>Anh vẫn thương em</h1><br />
+		<h2>(Click Nút Đỏ Kìa)</h2>
 	</div>
-
+	
+	<svg width="500" height="900" viewBox="0 200 500 300" style="display: none; position: absolute;">
+    <g stroke-dasharray="100% 100%" stroke-dashoffset="100%" stroke="#8B0400" fill="none" stroke-miterlimit="0">
+      <path id="line1" d="M50,20 Q347.5,12.5 325,32.5"/>
+      <path id="line2" d="M325,32.5 Q305,45 245,45" />
+      <path id="line3" d="M245,45 C185,45 -20,35 57.5,67.5" />
+      <path id="line4" d="M57.5,67.5 Q70,74 282,70" />
+      <path id="line5" d="M282,70 C450,65 330,110 130,100" />
+      <path id="line6" d="M130,100 Q-62,87 87.5,123.5" />
+      <path id="line7" d="M87.5,123.5 Q127.5,130 204,132.5" />
+      <path id="line8" d="M204,132.5 L325,130" />
+      <path id="line9" d="M325,130 Q495,130 275,162.5" />
+      <path id="line10" d="M275,162.5 Q200,170 95,162.5" />
+      <path id="line11" d="M95,162.5 C42.5,160 -12.5,165 35,187.5" />
+      <path id="line12" d="M35,187.5 C85,210 227.5,210 240,210" />
+      <path id="line13" d="M240,210 L300,210" />
+      <path id="line14" d="M300,210 Q460,210 355,227.5" />
+    </g>
+    <g>
+      <circle id="circle1" fill="#A21B14" cx="50" cy="20" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle1-1" fill="none" cx="200" cy="18" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle2" fill="none" cx="325" cy="30" r="7">
+      	<animate attributeName="r" begin="0s" dur="2s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle3" fill="none" cx="245" cy="45" r="7">
+      	<animate attributeName="r" begin="0s" dur="2s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle3-1" fill="none" cx="100" cy="44" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle4" fill="none" cx="58" cy="67" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle5" fill="none" cx="282" cy="70" r="7">
+      	<animate attributeName="r" begin="0s" dur="2s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle6" fill="none" cx="130" cy="100" r="7">
+      	<animate attributeName="r" begin="0s" dur="2s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle7" fill="none" cx="87.5" cy="123.5" r="7">
+      	<animate attributeName="r" begin="0s" dur="3s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle8" fill="none" cx="204" cy="132.5" r="7">
+      	<animate attributeName="r" begin="0s" dur="4s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle9" fill="none" cx="325" cy="130" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle10" fill="none" cx="275" cy="162.5" r="7">
+      	<animate attributeName="r" begin="0s" dur="2s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle11" fill="none" cx="95" cy="162.5" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle12" fill="none" cx="35" cy="187.5" r="7">
+      	<animate attributeName="r" begin="0s" dur="3s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle13" fill="none" cx="240" cy="210" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+      <circle id="circle14" fill="none" cx="300" cy="210" r="7">
+      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="3%" to="2%"/>
+      </circle>
+      <circle id="circle15" fill="none" cx="355" cy="227.5" r="7">
+      	<animate attributeName="r" begin="0s" dur="4s" repeatCount="indefinite" from="2%" to="3%"/>
+      </circle>
+    </g>
+  </svg>
+	
 	<div id="snowflakeContainer">
     <p class="snowflake">*</p>
 	</div>
@@ -54,6 +128,8 @@
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/prefixfree.min.js"></script>
 	<script type="text/javascript" src="assets/js/apply_fallingsnow.js"></script>
+	<script type="text/javascript" src="assets/js/svg.js"></script>
+	<script type="text/javascript" src="assets/js/slider_svg.js"></script>
 
 	<script type="text/javascript" src="assets/js/all.js"></script>
 </body>

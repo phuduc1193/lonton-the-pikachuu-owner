@@ -6,39 +6,45 @@
 	<title>Test SVG</title>
 </head>
 <body>
-  <svg viewBox="-250 -10 700 300">
-    <path id="line1" stroke-miterlimit="0" stroke="#00FF00" fill="none" d="M50,20 Q347.5,12.5 325,32.5"/>
-    <path stroke-miterlimit="0" stroke="#0000FF" fill="none" d="M325,32.5 Q305,45 245,45" />
-    <path stroke-miterlimit="0" stroke="#FF0000" fill="none" d="M245,45 C185,45 -20,35 57.5,67.5" />
-    <path stroke-miterlimit="0" stroke="#FFFF00" fill="none" d="M57.5,67.5 Q70,74 282,70" />
-    <path stroke-miterlimit="0" stroke="#00FFFF" fill="none" d="M282,70 C450,65 330,110 130,100" />
-    <path stroke-miterlimit="0" stroke="#00AAFF" fill="none" d="M130,100 Q-62,87 87.5,123.5" />
-    <path stroke-miterlimit="0" stroke="#22AA0B" fill="none" d="M87.5,123.5 Q127.5,130 204,132.5" />
-    <path stroke-miterlimit="0" stroke="#99220B" fill="none" d="M204,132.5 L325,130" />
-    <path stroke-miterlimit="0" stroke="#9900FF" fill="none" d="M325,130 Q495,130 275,162.5" />
-    <path stroke-miterlimit="0" stroke="#99AAFF" fill="none" d="M275,162.5 Q200,170 95,162.5" />
-    <path stroke-miterlimit="0" stroke="#0000FF" fill="none" d="M95,162.5 C42.5,160 -12.5,165 35,187.5" />
-    <path stroke-miterlimit="0" stroke="#FF00FF" fill="none" d="M35,187.5 C85,210 227.5,210 240,210" />
-    <path stroke-miterlimit="0" stroke="#FF55FF" fill="none" d="M240,210 L300,210" />
-    <path stroke-miterlimit="0" stroke="#00AAFF" fill="none" d="M300,210 Q460,210 355,227.5" />
-    
-    <g><circle cx="50" cy="20" r="7" /></g>
-    <g><circle cx="200" cy="18" r="7" /></g>
-    <g><circle cx="325" cy="30" r="7" /></g>
-    <g><circle cx="245" cy="45" r="7" /></g>
-    <g><circle cx="100" cy="44" r="7" /></g>
-    <g><circle cx="58" cy="67" r="7" /></g>
-    <g><circle cx="282" cy="70" r="7" /></g>
-    <g><circle cx="130" cy="100" r="7" /></g>
-    <g><circle cx="87.5" cy="123.5" r="7" /></g>
-    <g><circle cx="204" cy="132.5" r="7" /></g>
-    <g><circle cx="325" cy="130" r="7" /></g>
-    <g><circle cx="275" cy="162.5" r="7" /></g>
-    <g><circle cx="95" cy="162.5" r="7" /></g>
-    <g><circle cx="35" cy="187.5" r="7" /></g>
-    <g><circle cx="240" cy="210" r="7" /></g>
-    <g><circle cx="300" cy="210" r="7" /></g>
-    <g><circle cx="355" cy="227.5" r="7" /></g>
+  <svg width="500" height="700" viewBox="0 200 500 300">
+    <g stroke="#000000" fill="none" stroke-miterlimit="0">
+      <path id="line1" d="M50,20 Q347.5,12.5 325,32.5"/>
+      <path id="line2" d="M325,32.5 Q305,45 245,45" />
+      <path id="line3" d="M245,45 C185,45 -20,35 57.5,67.5" />
+      <path id="line4" d="M57.5,67.5 Q70,74 282,70" />
+      <path id="line5" d="M282,70 C450,65 330,110 130,100" />
+      <path id="line6" d="M130,100 Q-62,87 87.5,123.5" />
+      <path id="line7" d="M87.5,123.5 Q127.5,130 204,132.5" />
+      <path id="line8" d="M204,132.5 L325,130" />
+      <path id="line9" d="M325,130 Q495,130 275,162.5" />
+      <path id="line10" d="M275,162.5 Q200,170 95,162.5" />
+      <path id="line11" d="M95,162.5 C42.5,160 -12.5,165 35,187.5" />
+      <path id="line12" d="M35,187.5 C85,210 227.5,210 240,210" />
+      <path id="line13" d="M240,210 L300,210" />
+      <path id="line14" d="M300,210 Q460,210 355,227.5" />
+    </g>
+
+    <g>
+      <circle id="circle1" fill="#A21B14" cx="50" cy="20" r="7">
+	      	<animate attributeName="r" begin="0s" dur="1s" repeatCount="indefinite" from="5%" to="25%"/>
+	      </circle>
+      <circle id="circle1-1" fill="none" cx="200" cy="18" r="7" />
+      <circle id="circle2" fill="none" cx="325" cy="30" r="7" />
+      <circle id="circle3" fill="none" cx="245" cy="45" r="7" />
+      <circle id="circle3-1" fill="none" cx="100" cy="44" r="7" />
+      <circle id="circle4" fill="none" cx="58" cy="67" r="7" />
+      <circle id="circle5" fill="none" cx="282" cy="70" r="7" />
+      <circle id="circle6" fill="none" cx="130" cy="100" r="7" />
+      <circle id="circle7" fill="none" cx="87.5" cy="123.5" r="7" />
+      <circle id="circle8" fill="none" cx="204" cy="132.5" r="7" />
+      <circle id="circle9" fill="none" cx="325" cy="130" r="7" />
+      <circle id="circle10" fill="none" cx="275" cy="162.5" r="7" />
+      <circle id="circle11" fill="none" cx="95" cy="162.5" r="7" />
+      <circle id="circle12" fill="none" cx="35" cy="187.5" r="7" />
+      <circle id="circle13" fill="none" cx="240" cy="210" r="7" />
+      <circle id="circle14" fill="none" cx="300" cy="210" r="7" />
+      <circle id="circle15" fill="none" cx="355" cy="227.5" r="7" />
+    </g>
     
   </svg>
   <script type="text/javascript" src="assets/js/jquery.min.js"></script>

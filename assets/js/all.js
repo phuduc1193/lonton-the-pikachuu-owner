@@ -51,7 +51,11 @@ function displaySlider() {
 }
 
 function displayAnotherSlider() {
+	$(".opening").empty();
+	$("svg").fadeIn(2000);
 	$("#slider").fadeOut(3000);
 	$("#anotherSlider").fadeIn(3000);
+	$("#mainContent").css("background-image", "url(assets/images/11.jpg)");
+	$("#mainContent").fadeIn(4000);
 	$("#snowflakeContainer").fadeIn(3000);
 }
