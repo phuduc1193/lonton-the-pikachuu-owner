@@ -237,7 +237,14 @@ $("#circle10").click(function() {
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
   path.style.strokeDashoffset = '0';
   setTimeout(function(){$("#circle11").attr('fill','#A21B14');}, 2000);
-  $("#anotherSlider").css("background-image", "url(assets/images/22.jpg)");
+  
+  $("#anotherSlider").fadeIn(3000);
+  $("#mainContent").fadeOut(2000);
+  setTimeout(function(){
+    $("#mainContent").css("background-image", "url(assets/images/23.jpg)");
+  }, 2000);
+
+  $("#svgTextContainer").empty().append('<p>Nhà thờ có lễ gì đó..</p><p>Pika cũng đi với lonton</><p>Lần đầu tiên.. anh với em giận nhau khi gặp mặt..</p><p>October 22, 2016</p>').children(':last').hide().fadeIn(800);
 });
 
 $("#circle11").click(function() {
@@ -250,7 +257,14 @@ $("#circle11").click(function() {
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
   path.style.strokeDashoffset = '0';
   setTimeout(function(){$("#circle12").attr('fill','#A21B14');}, 2000);
-  $("#anotherSlider").css("background-image", "url(assets/images/23.jpg)");
+
+  $("#mainContent").fadeIn(3000);
+  $("#anotherSlider").fadeOut(2000);
+  setTimeout(function(){
+    $("#anotherSlider").css("background-image", "url(assets/images/24.jpg)");
+  }, 2000);
+
+  $("#svgTextContainer").empty().append("<p>Tú Anh với pika đi xem lonton hát</p><p>Trường lonton hát hay nhứt :D</><p>I'm proud of you</p><p>November 29, 2016</p>").children(':last').hide().fadeIn(800);
 });
 
 $("#circle12").click(function() {
@@ -263,7 +277,14 @@ $("#circle12").click(function() {
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
   path.style.strokeDashoffset = '0';
   setTimeout(function(){$("#circle13").attr('fill','#A21B14');}, 2000);
-  $("#anotherSlider").css("background-image", "url(assets/images/24.jpg)");
+
+  $("#anotherSlider").fadeIn(3000);
+  $("#mainContent").fadeOut(2000);
+  setTimeout(function(){
+    $("#mainContent").css("background-image", "url(assets/images/25.jpg)");
+  }, 2000);
+
+  $("#svgTextContainer").empty().append('<p>Lonton với anh có đẹp đôi hông ta?</p><p>Pika hơi lùn thôi.. nhưng chắc k sao?</p>').children(':last').hide().fadeIn(800);
 });
 
 
@@ -277,7 +298,14 @@ $("#circle13").click(function() {
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
   path.style.strokeDashoffset = '0';
   setTimeout(function(){$("#circle14").attr('fill','#A21B14');}, 2000);
-  $("#anotherSlider").css("background-image", "url(assets/images/25.jpg)");
+
+  $("#mainContent").fadeIn(3000);
+  $("#anotherSlider").fadeOut(2000);
+  setTimeout(function(){
+    $("#anotherSlider").css("background-image", "url(assets/images/26.jpg)");
+  }, 2000);
+
+  $("#svgTextContainer").empty().append("<p>Mãi tới giờ mới thấy lòi con cocoa..</p><p>Nó mà thấy đc chắc buồn chết hehe</>").children(':last').hide().fadeIn(800);
 });
 
 $("#circle14").click(function() {
@@ -290,7 +318,10 @@ $("#circle14").click(function() {
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
   path.style.strokeDashoffset = '0';
   setTimeout(function(){$("#circle15").attr('fill','#A21B14');}, 2000);
-  $("#anotherSlider").css("background-image", "url(assets/images/26.jpg)");
+
+  $("#anotherSlider").fadeIn(3000);
+  $("#mainContent").fadeOut(2000);
+  $("#svgTextContainer").empty().append('<p>Này có vẻ là lần đầu tiên pika với em chính thức hẹn hò?</p><p>Lonton xinh.. mà có điều ráng xinh hơn mới hợp với pika..</p><p>MUAHAHAHAHA ... (evil laugh)</p><p>Anh yêu em</p><p>December 17, 2016</p>').children(':last').hide().fadeIn(800);
 });
 
 $("#circle15").click(function() {
