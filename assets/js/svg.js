@@ -335,9 +335,9 @@ $("#circle15").click(function() {
   path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 1s ease-in-out';
   path.style.strokeDashoffset = length;
   
+  $("#svgTextContainer").remove();
   setTimeout(function(){
     $("#anotherSlider").fadeOut(2000);
-    $("#last").fadeIn(1000);
   }, 14000);
   
   setTimeout(function(){
