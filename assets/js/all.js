@@ -9,11 +9,21 @@ $(document).ready(function() {
 function startProgram() {
 	$("#btnStartContainer").fadeOut();
 	setTimeout(function() {
-	    $("#mainContent").fadeIn();
+	  $("#mainContent").fadeIn();
 		$(".opening").hide().delay(500).fadeIn(800);
 		$(".opening p").hide().delay(1800).fadeIn(800);
 			// Play background music
 		$("#bg-sound").get(0).play();
+		
+		var repeat1 = 0;
+		document.getElementById('bg-sound').addEventListener('ended', function(){
+			if (repeat1 == 0){
+				this.currentTime = 0;
+	    	this.play();
+	    	repeat1 = 1;
+			}
+		}, false);
+		
 	}, 50);
 	
 	setTimeout(function() {
